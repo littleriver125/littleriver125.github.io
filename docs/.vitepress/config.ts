@@ -67,7 +67,7 @@ function nav() {
   return [
     {
       text: '博客',
-      link: '/reference/site-config',
+      link: '/reference/0515-chatgpt-config',
       activeMatch: '/reference/'
     },
     { 
@@ -154,7 +154,7 @@ function sidebarGuide() {
     },
     {
       text: 'Config & API Reference',
-      link: '/reference/site-config'
+      link: '/reference/0515-chatgpt-config'
     }
   ]
 }
@@ -168,12 +168,21 @@ function sidebarReference() {
         { text: '[ 2023年 ]', 
           items: [
             {
-              text: 'Site Config',
-              link: '/reference/site-config' 
-            }              
+              text: '05/15 部署私人Chatgpt项目',
+              link: '/reference/0515-chatgpt-config' 
+            },
+            {
+              text: '05/14 Slack上使用GPT4应用',
+              link: '/reference/0514-chatgpt-claude' 
+            },  
+            {
+              text: '05/10 申请个人Chatgpt账号',
+              link: '/reference/0510-chatgpt-apply' 
+            }               
           ]
         },   
         { text: '[ 2022年 ]', 
+          collapsed: true,
           items: [
             {
               text: 'Frontmatter Config',
@@ -181,7 +190,8 @@ function sidebarReference() {
             }              
           ]
         },        
-        { text: '[ 2021年 ]', 
+        { text: '[ 2021年 ]',
+          collapsed: true, 
           items: [
             {
               text: 'Runtime API',
@@ -190,6 +200,7 @@ function sidebarReference() {
           ]
         },
         { text: '[ 2020年 ]', 
+          collapsed: true,
           items: [
             {
               text: 'CLI',
@@ -199,9 +210,10 @@ function sidebarReference() {
         },
         {
           text: '[ 2019年 ]',
+          collapsed: true,
           items: [
             {
-              text: 'Overview',
+              text: '04/13 DBeaver数据库软件',
               link: '/reference/default-theme-config'
             },
             {
