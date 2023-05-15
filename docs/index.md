@@ -1,12 +1,12 @@
 ---
 layout: home
 
-title: VitePress
-titleTemplate: Vite & Vue Powered Static Site Generator
+title: LittleRiver
+titleTemplate: LittleRiver & Blog powered static site generator.
 
 hero:
-  name: VitePress
-  text: Vite & Vue Powered Static Site Generator
+  name: LittleRiver
+  text: LittleRiver & Blog powered static site generator.
   tagline: Simple, powerful, and fast. Meet the modern SSG framework you've always wanted.
   actions:
     - theme: brand

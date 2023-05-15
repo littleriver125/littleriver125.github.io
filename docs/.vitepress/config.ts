@@ -6,8 +6,8 @@ const pkg = require('vitepress/package.json')
 
 export default defineConfig({
   lang: 'en-US',
-  title: 'VitePress',
-  description: 'Vite & Vue powered static site generator.',
+  title: 'LittleRiver小河',
+  description: 'LittleRiver & Blog powered static site generator.',
   base: '/',
   lastUpdated: true,
   // cleanUrls: true,
@@ -65,11 +65,15 @@ export default defineConfig({
 
 function nav() {
   return [
-    { text: 'Guide', link: '/guide/what-is-vitepress', activeMatch: '/guide/' },
     {
-      text: 'Reference',
+      text: '博客',
       link: '/reference/site-config',
       activeMatch: '/reference/'
+    },
+    { 
+      text: '专题', 
+      link: '/guide/what-is-vitepress', 
+      activeMatch: '/guide/' 
     },
     {
       text: pkg.version,
@@ -134,20 +138,20 @@ function sidebarGuide() {
         }
       ]
     },
-    // {
-    //   text: 'Migrations',
-    //   collapsed: false,
-    //   items: [
-    //     {
-    //       text: 'Migration from VuePress',
-    //       link: '/guide/migration-from-vuepress'
-    //     },
-    //     {
-    //       text: 'Migration from VitePress 0.x',
-    //       link: '/guide/migration-from-vitepress-0'
-    //     }
-    //   ]
-    // },
+    {
+      text: 'Migrations',
+      collapsed: false,
+      items: [
+        {
+          text: 'Migration from VuePress',
+          link: '/guide/migration-from-vuepress'
+        },
+        {
+          text: 'Migration from VitePress 0.x',
+          link: '/guide/migration-from-vitepress-0'
+        }
+      ]
+    },
     {
       text: 'Config & API Reference',
       link: '/reference/site-config'
@@ -158,14 +162,43 @@ function sidebarGuide() {
 function sidebarReference() {
   return [
     {
-      text: 'Reference',
-      items: [
-        { text: 'Site Config', link: '/reference/site-config' },
-        { text: 'Frontmatter Config', link: '/reference/frontmatter-config' },
-        { text: 'Runtime API', link: '/reference/runtime-api' },
-        { text: 'CLI', link: '/reference/cli' },
+      text: '博客',
+      
+      items: [     
+        { text: '[ 2023年 ]', 
+          items: [
+            {
+              text: 'Site Config',
+              link: '/reference/site-config' 
+            }              
+          ]
+        },   
+        { text: '[ 2022年 ]', 
+          items: [
+            {
+              text: 'Frontmatter Config',
+              link: '/reference/frontmatter-config' 
+            }              
+          ]
+        },        
+        { text: '[ 2021年 ]', 
+          items: [
+            {
+              text: 'Runtime API',
+              link: 'reference/runtime-api' 
+            }              
+          ]
+        },
+        { text: '[ 2020年 ]', 
+          items: [
+            {
+              text: 'CLI',
+              link: '/reference/cli' 
+            }              
+          ]
+        },
         {
-          text: 'Default Theme',
+          text: '[ 2019年 ]',
           items: [
             {
               text: 'Overview',
@@ -220,7 +253,7 @@ function sidebarReference() {
               link: '/reference/default-theme-carbon-ads'
             }
           ]
-        }
+        },        
       ]
     }
   ]
