@@ -1,6 +1,7 @@
 import { createRequire } from 'module'
 import { defineConfig } from 'vitepress'
 
+// @ts-ignore
 const require = createRequire(import.meta.url)
 const pkg = require('vitepress/package.json')
 
