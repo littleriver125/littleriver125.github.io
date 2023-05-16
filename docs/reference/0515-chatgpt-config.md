@@ -2,13 +2,16 @@
 outline: deep
 ---
 
-# Site Config
+# 部署私人ChatGPT项目 - ChatGPT Next Web
 
-Site config is where you can define the global settings of the site. App config options define settings that apply to every VitePress site, regardless of what theme it is using. For example, the base directory or the title of the site.
+一键免费部署你的私人 ChatGPT 网页应用.
 
-## Overview
 
-### Config Resolution
+![big image](https://github.com/Yidadaa/ChatGPT-Next-Web/raw/main/docs/images/cover.png)
+
+## Github
+
+### 注册账号
 
 The config file is always resolved from `<root>/.vitepress/config.[ext]`, where `<root>` is your VitePress [project root](../guide/routing#root-and-source-directory), and `[ext]` is one of the supported file extensions. TypeScript is supported out of the box. Supported extensions include `.js`, `.ts`, `.cjs`, `.mjs`, `.cts`, and `.mts`.
 
@@ -24,7 +27,7 @@ export default {
 }
 ```
 
-### Config Intellisense
+### Fork仓库
 
 Using the `defineConfig` helper will provide TypeScript-powered intellisense for config options. Assuming your IDE supports it, this should work in both JavaScript and TypeScript.
 
@@ -77,9 +80,9 @@ export default defineConfigWithTheme<ThemeConfig>({
 
   You can configure the underlying [Markdown-It](https://github.com/markdown-it/markdown-it) instance using the [markdown](#markdown) option in your VitePress config.
 
-## Site Metadata
+## Vercel
 
-### title
+### 注册账号
 
 - Type: `string`
 - Default: `VitePress`
@@ -101,7 +104,7 @@ export default {
 
 The title of the page will be `Hello | My Awesome Site`.
 
-### titleTemplate
+### 授权账号
 
 - Type: `string | boolean`
 - Can be overridden per page via [frontmatter](./frontmatter-config#titletemplate)
@@ -133,7 +136,7 @@ Here `:title` will be replaced with the text inferred from the page's first `<h1
 
 The option can be set to `false` to disable title suffixes.
 
-### description
+### 导入仓库
 
 - Type: `string`
 - Default: `A VitePress site`
@@ -222,9 +225,9 @@ export default {
 }
 ```
 
-## Routing
+## 配置域名
 
-### cleanUrls
+### godaddy
 
 - Type: `boolean`
 - Default: `false`
@@ -235,7 +238,7 @@ When set to `true`, VitePress will remove the trailing `.html` from URLs. Also s
 Enabling this may require additional configuration on your hosting platform. For it to work, your server must be able to serve `/foo.html` when visiting `/foo` **without a redirect**.
 :::
 
-### rewrites
+### cf
 
 - Type: `Record<string, string>`
 
